@@ -9,7 +9,6 @@ public class EatPellet : MonoBehaviour
 
     private void OnDisable()
     {
-        //? means if not null, then invoke. if null then do nothing
         pelletEaten?.Invoke();
     }
 }

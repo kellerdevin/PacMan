@@ -52,5 +52,14 @@ public class InputHandler : MonoBehaviour
         {
             cmd.Execute(gameObject);
         }
+        
+    }
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Pellet")
+        {
+            Destroy(col.gameObject);
+        }
+        
     }
 }

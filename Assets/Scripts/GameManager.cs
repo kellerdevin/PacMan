@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,7 +20,13 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         Game.StartGame();
-        Sounds.PlayStartButtonSound();
+        // Sounds.PlayStartButtonSound();
+    }
+    public static event Action gameStarted;
+
+    private void OnDisable()
+    {
+        gameStarted?.Invoke();
     }
 }
 
