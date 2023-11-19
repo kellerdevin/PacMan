@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using Script;
 using UnityEngine;
 using UnityEngine.UI;
-
 
 [RequireComponent(typeof(Text))]
 public class StatsDisplay : MonoBehaviour
@@ -25,19 +21,24 @@ public class StatsDisplay : MonoBehaviour
     private void OnEnable()
     {  
         EatPellet.pelletEaten += UpdateScore;
+        Player.playerDied += UpdateLives;
         
     }
     
     private void OnDisable()
     {
         EatPellet.pelletEaten -= UpdateScore;
+        Player.playerDied -= UpdateLives;
     }
     
     private void UpdateScore()
     {
         score += 10;
-        text.text = "Score: " + this.score + "\nLevel: " + level + "\nLives: " + lives;
+        text.text = "Score: " + score + "\nLevel: " + level + "\nLives: " + lives;
     }
-    
-    
+    private void UpdateLives()
+    {
+        lives -= 1;
+        text.text = "Score: " + score + "\nLevel: " + level + "\nLives: " + lives;
+    }
 }

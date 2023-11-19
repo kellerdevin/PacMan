@@ -2,9 +2,6 @@
 
 //This script will have a method “HandleInput” to process commands.
 
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class InputHandler : MonoBehaviour
@@ -54,12 +51,5 @@ public class InputHandler : MonoBehaviour
         }
         
     }
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.tag == "Pellet")
-        {
-            Destroy(col.gameObject);
-        }
-        
-    }
+    
 }

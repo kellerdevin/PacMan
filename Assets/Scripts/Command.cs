@@ -13,8 +13,7 @@ e. Assignment 1
  * Classes that need to extend from the base “Command.cs” class.
     a. “Move”. Will move the character object right or left 1 unit on the X-axis when it is pressed.
  */
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 /*

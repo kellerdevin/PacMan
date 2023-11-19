@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Sounds : MonoBehaviour
@@ -15,14 +13,12 @@ public class Sounds : MonoBehaviour
     {
         AudioSource.clip = StartButtonClip;
         AudioSource.Play();
-        AudioSource.loop = true;
     }
     
     
     public void PlayPelletCollectedClip()
     {
-        AudioSource.clip = PelletCollectedClip;
-        AudioSource.Play();
+        AudioSource.PlayOneShot(PelletCollectedClip);
     }
     
     public void PlayGameOverClip()
@@ -35,6 +31,7 @@ public class Sounds : MonoBehaviour
     {
         AudioSource.clip = BackgroundMusic;
         AudioSource.Play();
+        AudioSource.loop = true;
     }
     
     public void PlayGhostEatenClip()

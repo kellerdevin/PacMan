@@ -5,18 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15b73d74-1fbc-4c41-8f54-b34781dc2f99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Observers/AudioPlayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Observers/AudioPlayer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Observers/Sounds.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Observers/Sounds.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Observers/UI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Observers/UI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PacMan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PacMan/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/pacman_beginning.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/pacman_beginning.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pellet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pellet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ghost.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ghost.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Command.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EatPellet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EatPellet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameTimer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Observers/Achievements.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Observers/Achievements.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Observers/AudioPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Observers/AudioPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Observers/StatsDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Observers/StatsDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sounds.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sounds.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +40,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Countdown.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameTimer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IObserver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Observers/AudioPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Observers/StatsDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -123,7 +134,8 @@
       <workItem from="1700090475937" duration="1000" />
       <workItem from="1700090493564" duration="5294000" />
       <workItem from="1700096364412" duration="15616000" />
-      <workItem from="1700170077920" duration="16414000" />
+      <workItem from="1700170077920" duration="25948000" />
+      <workItem from="1700320265793" duration="8905000" />
     </task>
     <servers />
   </component>

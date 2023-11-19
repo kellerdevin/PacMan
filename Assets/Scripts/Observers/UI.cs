@@ -1,18 +1,17 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// The class for the UI element that displays the coins, lives, and level
 public class UI : MonoBehaviour
 {
-    public Text TimeText;
-    public GameTimer GameTimer;
-
+    // The method to update the UI
     public void Update()
     {
         ShowTime(GameTimer.GetTimeAsString());
     }
+    
+    public Text TimeText;
+    public GameTimer GameTimer;
 
     public void ShowTime(string time)
     {
