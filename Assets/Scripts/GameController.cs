@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour
         gameState = GameStates.MainMenu;
     }
 
-    private void OnGamePlaying()
+    public void OnGamePlaying()
     {
         Time.timeScale = 1;
         gameState = GameStates.GamePlaying;
