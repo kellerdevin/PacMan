@@ -27,19 +27,20 @@ public class InputHandler : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            cmd = new Move(new Vector2(-moveUnit, 0));
+            cmd = new PlayerMovement(new Vector2(-moveUnit, 0));
+
         }
         else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            cmd = new Move(new Vector2(moveUnit, 0));
+            cmd = new PlayerMovement(new Vector2(moveUnit, 0));
         }
         else if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
-            cmd = new Move(new Vector2(0, moveUnit));
+            cmd = new PlayerMovement(new Vector2(0, moveUnit));
         }
         else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
-            cmd = new Move(new Vector2(0, -moveUnit));
+            cmd = new PlayerMovement(new Vector2(0, -moveUnit));
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
