@@ -8,12 +8,12 @@ e. Assignment 1
 
 using UnityEngine;
 
-public class Move : Command
+public class PlayerMovement : Command
 {
     private float moveDistance = 1f;
     private Vector2 direction;
 
-    public Move(Vector3 dir)
+    public PlayerMovement(Vector3 dir)
     {
         direction = dir;
     }
@@ -22,5 +22,12 @@ public class Move : Command
     {
         // Move character
         gameObject.transform.Translate(direction * moveDistance);
+    }
+    
+    public void Respawn()
+    {
+        // Respawn logic
+        // this.transform.position = new Vector3(0, 0, 0); // Example respawn position
+        // Add invincibility time or other respawn logic here
     }
 }
