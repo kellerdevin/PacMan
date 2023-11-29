@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour
         gameState = GameStates.MainMenu;
     }
 
-    public void OnGamePlaying()
+    private void OnGamePlaying()
     {
         Time.timeScale = 1;
         gameState = GameStates.GamePlaying;
@@ -48,24 +48,47 @@ public class GameController : MonoBehaviour
 
     }
 
-    public void OnGamePaused()
+    private void OnGamePaused()
     {
         Time.timeScale = 0;
         gameState = GameStates.GamePaused;
 
     }
 
-    public void OnGameWon()
+    private void OnGameWon()
     {
         Time.timeScale = 0;
         gameState = GameStates.GameWon;
 
     }
 
-    public void OnGameLost()
+    private void OnGameLost()
     {
         Time.timeScale = 0;
         gameState = GameStates.GameLost;
 
+    }
+
+    public void StateUpdate(GameStates newState)
+    {
+        switch (newState)
+        {
+            case GameStates.MainMenu:
+                break;
+            case GameStates.GamePlaying:
+                OnGamePlaying();
+                break;
+            case GameStates.GamePaused:
+                OnGamePaused();
+                break;
+            case GameStates.GameWon:
+                gameState = GameStates.GameWon;
+                OnGameWon();
+                break;
+            case GameStates.GameLost:
+                gameState = GameStates.GameLost;
+                OnGameLost();
+                break;
+        }
     }
 }
