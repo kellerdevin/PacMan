@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 /**
  * a. Devin Keller
 b. Student ID: 2368610
@@ -14,13 +13,9 @@ e. Assignment 1
  * Classes that need to extend from the base “Command.cs” class.
     a. “Move”. Will move the character object right or left 1 unit on the X-axis when it is pressed.
  */
-=======
->>>>>>> Stashed changes
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
-<<<<<<< Updated upstream
 /*
  * Classes that extend from base class
  * - Move
@@ -32,19 +27,3 @@ public abstract class Command
         // Base implementation
     }
 }
-=======
-public class Command : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
->>>>>>> Stashed changes
