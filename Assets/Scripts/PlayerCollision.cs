@@ -1,9 +1,11 @@
 using UnityEngine;
+using TMPro;
 
 public class PlayerCollision : MonoBehaviour
 {
     public int lives = 3; // Number of lives the player has
     public Transform respawnPoint; // The respawn point
+    public TextMeshProUGUI livesText;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -11,7 +13,7 @@ public class PlayerCollision : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             lives--;
-            Debug.Log("Lives left: " + lives);
+            livesText.text = "Lives: " + lives;
             if (lives > 0)
             {
                 Respawn();
