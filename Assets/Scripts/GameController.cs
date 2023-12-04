@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour
         gameState = GameStates.MainMenu;
     }
 
-    public void OnGamePlaying()
+    public void OnGamePlaying() //Code to execute when game state is chenged to playing
     {
         Time.timeScale = 1;
         gameState = GameStates.GamePlaying;
@@ -48,14 +48,14 @@ public class GameController : MonoBehaviour
 
     }
 
-    private void OnGamePaused()
+    private void OnGamePaused() //Code to execute when game is paused
     {
         Time.timeScale = 0;
         gameState = GameStates.GamePaused;
 
     }
 
-    private void OnGameWon()
+    private void OnGameWon() //Code to execute when game is won
     {
         Time.timeScale = 0;
         gameState = GameStates.GameWon;
