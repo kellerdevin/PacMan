@@ -62,7 +62,7 @@ public class GameController : MonoBehaviour
 
     }
 
-    private void OnGameLost()
+    private void OnGameLost() //Code to execute when game is lost
     {
         Time.timeScale = 0;
         gameState = GameStates.GameLost;

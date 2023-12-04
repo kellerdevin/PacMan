@@ -16,13 +16,13 @@ public class GameUIHandler : MonoBehaviour
     public void onPauseClicked()
     {
         pauseMenu.SetActive(true);
-        Time.timeScale = 0;
+        GameController.instance.StateUpdate(GameController.GameStates.GamePaused);
     }
 
     public void onResumeClicked()
     {
         pauseMenu.SetActive(false);
-        Time.timeScale = 1;
+        GameController.instance.StateUpdate(GameController.GameStates.GamePlaying);
     }
 
     public void onMainMenuClicked()
