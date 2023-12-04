@@ -125,8 +125,11 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD:Assets/Scenes/LoserScene.unity
 <<<<<<< HEAD:Assets/Scenes/LoserScene.unity
+<<<<<<< HEAD:Assets/Scenes/LoserScene.unity
 --- !u!1 &1236041827
 =======
+=======
+>>>>>>> parent of 9d72577 (Merge from Main):Assets/Scenes/SampleScene.unity
 =======
 >>>>>>> parent of 9d72577 (Merge from Main):Assets/Scenes/SampleScene.unity
 --- !u!1 &519420028
@@ -213,8 +216,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD:Assets/Scenes/LoserScene.unity
 <<<<<<< HEAD:Assets/Scenes/LoserScene.unity
+<<<<<<< HEAD:Assets/Scenes/LoserScene.unity
   m_GameObject: {fileID: 1236041827}
   serializedVersion: 2
+=======
+  m_GameObject: {fileID: 519420028}
+>>>>>>> parent of 9d72577 (Merge from Main):Assets/Scenes/SampleScene.unity
 =======
   m_GameObject: {fileID: 519420028}
 >>>>>>> parent of 9d72577 (Merge from Main):Assets/Scenes/SampleScene.unity
@@ -228,6 +235,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/LoserScene.unity
 <<<<<<< HEAD:Assets/Scenes/LoserScene.unity
 <<<<<<< HEAD:Assets/Scenes/LoserScene.unity
 --- !u!1 &1536030991
@@ -541,6 +549,8 @@ SceneRoots:
   - {fileID: 1236041830}
   - {fileID: 1568716850}
   - {fileID: 1602761956}
+=======
+>>>>>>> parent of 9d72577 (Merge from Main):Assets/Scenes/SampleScene.unity
 =======
 >>>>>>> parent of 9d72577 (Merge from Main):Assets/Scenes/SampleScene.unity
 =======
