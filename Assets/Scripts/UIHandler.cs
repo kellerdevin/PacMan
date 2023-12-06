@@ -8,7 +8,7 @@ public class UIHandler : MonoBehaviour
 {
     public void OnGamePlay()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level1");
     }
 
 
