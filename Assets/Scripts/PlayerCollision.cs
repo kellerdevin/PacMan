@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class PlayerCollision : MonoBehaviour
             {
                 Debug.Log("Game Over!");
                 // Add game over logic here
+                LoadLoserScene();
             }
         }
     }
@@ -30,5 +32,10 @@ public class PlayerCollision : MonoBehaviour
     {
         transform.position = respawnPoint.position; // Move player to respawn point
         Debug.Log("Respawned at " + respawnPoint.position);
+    }
+    
+    private void LoadLoserScene()
+    {
+        SceneManager.LoadScene("LoserScene"); // Load the LoserScene
     }
 }

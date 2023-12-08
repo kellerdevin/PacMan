@@ -1,4 +1,4 @@
-/**
+/*
  * a. Devin Keller
 b. Student ID: 2368610
 c. dkeller@chapman.edu
@@ -13,7 +13,6 @@ e. Assignment 1
  * Classes that need to extend from the base “Command.cs” class.
     a. “Move”. Will move the character object right or left 1 unit on the X-axis when it is pressed.
  */
-
 using UnityEngine;
 
 /*

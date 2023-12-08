@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
     {
         Time.timeScale = 1;
         gameState = GameStates.GamePlaying;
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level1");
 
     }
 
