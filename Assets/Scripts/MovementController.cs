@@ -46,8 +46,8 @@ public class MovementController : MonoBehaviour
             reverseDirection = true;
         }
 
-        if ((transform.position.x == CurrentNode.transform.position.x) &&
-            (transform.position.y == CurrentNode.transform.position.y) || reverseDirection)
+        if (transform.position.x == CurrentNode.transform.position.x &&
+            transform.position.y == CurrentNode.transform.position.y || reverseDirection)
 
 {
             if (IsGhost)
