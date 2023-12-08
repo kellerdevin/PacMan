@@ -87,15 +87,14 @@ public class EnemyNavigation : MonoBehaviour
     MovementController.EDirection GetSendClosestDirection(Vector2 target)
     {
         float shortestDistance = 0;
-        MovementController.EDirection newDirection = MovementController.EDirection.None;
+        MovementController.EDirection newDirection = MovementController.EDirection.Up;
         MovementController.EDirection lastMovingDirection = _movementController.lastMovingDirection;
 
         NodeController NC = _movementController.CurrentNode.GetComponent<NodeController>();
 
         if (NC.CanMoveUp && lastMovingDirection != MovementController.EDirection.Down)
         {
-            GameObject node = NC.NodeUp;
-            float distance = Vector2.Distance(node.transform.position, target);
+            float distance = Vector2.Distance(NC.NodeUp.transform.position, target);
 
             if (distance < shortestDistance || shortestDistance == 0)
             {
@@ -106,8 +105,7 @@ public class EnemyNavigation : MonoBehaviour
         
         if (NC.CanMoveDown && lastMovingDirection != MovementController.EDirection.Up)
         {
-            GameObject node = NC.NodeDown;
-            float distance = Vector2.Distance(node.transform.position, target);
+            float distance = Vector2.Distance(NC.NodeDown.transform.position, target);
 
             if (distance < shortestDistance || shortestDistance == 0)
             {
@@ -118,8 +116,7 @@ public class EnemyNavigation : MonoBehaviour
         
         if (NC.CanMoveLeft && lastMovingDirection != MovementController.EDirection.Right)
         {
-            GameObject node = NC.NodeLeft;
-            float distance = Vector2.Distance(node.transform.position, target);
+            float distance = Vector2.Distance(NC.NodeLeft.transform.position, target);
 
             if (distance < shortestDistance || shortestDistance == 0)
             {
@@ -130,8 +127,7 @@ public class EnemyNavigation : MonoBehaviour
         
         if (NC.CanMoveRight && lastMovingDirection != MovementController.EDirection.Left)
         {
-            GameObject node = NC.NodeRight;
-            float distance = Vector2.Distance(node.transform.position, target);
+            float distance = Vector2.Distance(NC.NodeRight.transform.position, target);
 
             if (distance < shortestDistance || shortestDistance == 0)
             {
