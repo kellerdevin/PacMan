@@ -38,6 +38,7 @@ public class GameUIHandler : MonoBehaviour
     public void onRestartClicked() //reloads current scene
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
     }
 
     public void OnQuitClicked()

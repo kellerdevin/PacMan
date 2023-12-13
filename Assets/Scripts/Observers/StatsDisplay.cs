@@ -47,6 +47,7 @@ public class StatsDisplay : MonoBehaviour
         {
             lives = 0;
             text.text = "Score: " + score + "\nLevel: " + level + "\nLives: " + lives + "\nGame Over";
+            GameController.instance.StateUpdate(GameController.GameStates.GameLost);
         }
     }
 }

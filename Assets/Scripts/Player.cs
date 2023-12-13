@@ -28,6 +28,11 @@ public class Player : MonoBehaviour
         if (col.gameObject.tag == "Enemy")
         {
             LoseLife();
+            MovementController MC = gameObject.GetComponent<MovementController>();
+            transform.position = MC.StartingNode.transform.position;
+            MC.CurrentNode = MC.StartingNode;
+            MC.Direction = MovementController.EDirection.None;
+            MC.lastMovingDirection = MovementController.EDirection.None;
         }
         if (col.gameObject.tag == "ReverseCollectable")
         {

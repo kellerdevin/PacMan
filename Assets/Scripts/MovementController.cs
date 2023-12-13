@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
+    public GameObject StartingNode;
     public GameObject CurrentNode;
     public float speed = 4f;
 

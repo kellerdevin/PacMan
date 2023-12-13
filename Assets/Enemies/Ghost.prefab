@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad16b309676c3429bbd3329d7ddd59b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 4
+  duration: 6
   ghost: {fileID: 2424105656241975208}
   reverseCollectable: {fileID: 1700695698786321267}
 --- !u!58 &6720463180450896142

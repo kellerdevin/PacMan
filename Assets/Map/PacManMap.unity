@@ -19066,6 +19066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8348f4bd29cc40d88a8b7127815b92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartingNode: {fileID: 570896754}
   CurrentNode: {fileID: 570896754}
   speed: 4
   Direction: 0
