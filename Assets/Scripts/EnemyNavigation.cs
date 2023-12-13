@@ -17,6 +17,8 @@ public class EnemyNavigation : MonoBehaviour
 {
     
     public EGhostMovementState GhostMovementState;
+
+    public float StartWaitTime;
     
     public GameObject GhostNodeRight;
     public GameObject GhostNodeLeft;
@@ -26,19 +28,11 @@ public class EnemyNavigation : MonoBehaviour
     private MovementController _movementController;
     public GameObject StartingNode;
 
-
-    public GameObject GameObjectManager;
     public PacManGameManager PacManGameManager;
 
     private void Awake()
     {
         _movementController = GetComponent<MovementController>();
-        PacManGameManager = GameObjectManager.GetComponent<PacManGameManager>();
-    }
-
-    void Start()
-    {
-     
     }
 
     public void ReachedCenterOfNode(NodeController nodeController)

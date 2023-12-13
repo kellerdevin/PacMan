@@ -14,61 +14,47 @@ public class NodeController : MonoBehaviour
     public GameObject NodeLeft;
     public GameObject NodeUp;
     public GameObject NodeDown;
+    
+    public LayerMask targetLayer;
 
     private float raycastDistance = 1.1f;
     
     void Start()
     {
         RaycastHit2D[] HitsDown;
-        HitsDown = Physics2D.RaycastAll(transform.position, -Vector2.up);
+        HitsDown = Physics2D.RaycastAll(transform.position, -Vector2.up, raycastDistance, targetLayer);
 
         for (int i = 0; i < HitsDown.Length; i++)
         {
-            float distance = Mathf.Abs(HitsDown[i].point.y - transform.position.y);
-            if (distance < raycastDistance)
-            {
                 CanMoveDown = true;
                 NodeDown = HitsDown[i].collider.gameObject;
-            }
         }
         
         RaycastHit2D[] HitsUp;
-        HitsUp = Physics2D.RaycastAll(transform.position, Vector2.up);
+        HitsUp = Physics2D.RaycastAll(transform.position, Vector2.up, raycastDistance, targetLayer);
 
         for (int i = 0; i < HitsUp.Length; i++)
         {
-            float distance = Mathf.Abs(HitsUp[i].point.y - transform.position.y);
-            if (distance < raycastDistance)
-            {
-                CanMoveUp = true;
-                NodeUp = HitsUp[i].collider.gameObject;
-            }
+            CanMoveUp = true;
+            NodeUp = HitsUp[i].collider.gameObject;
         }
         
         RaycastHit2D[] HitsRight;
-        HitsRight = Physics2D.RaycastAll(transform.position, Vector2.right);
+        HitsRight = Physics2D.RaycastAll(transform.position, Vector2.right, raycastDistance, targetLayer);
 
         for (int i = 0; i < HitsRight.Length; i++)
         {
-            float distance = Mathf.Abs(HitsRight[i].point.x - transform.position.x);
-            if (distance < raycastDistance)
-            {
-                CanMoveRight = true;
-                NodeRight = HitsRight[i].collider.gameObject;
-            }
+            CanMoveRight = true;
+            NodeRight = HitsRight[i].collider.gameObject;
         }
         
         RaycastHit2D[] HitsLeft;
-        HitsLeft = Physics2D.RaycastAll(transform.position, -Vector2.right);
+        HitsLeft = Physics2D.RaycastAll(transform.position, -Vector2.right, raycastDistance, targetLayer);
 
         for (int i = 0; i < HitsLeft.Length; i++)
         {
-            float distance = Mathf.Abs(HitsLeft[i].point.x - transform.position.x);
-            if (distance < raycastDistance)
-            {
-                CanMoveLeft = true;
-                NodeLeft = HitsLeft[i].collider.gameObject;
-            }
+            CanMoveLeft = true;
+            NodeLeft = HitsLeft[i].collider.gameObject;
         }
     }
     

@@ -4,31 +4,31 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
     private MovementController movementController;
+
+    // Start is called before the first frame update
     void Start()
     {
         movementController = GetComponent<MovementController>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void MoveUp()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            movementController.SetDirection(MovementController.EDirection.Up);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            movementController.SetDirection(MovementController.EDirection.Left);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            movementController.SetDirection(MovementController.EDirection.Down);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            movementController.SetDirection(MovementController.EDirection.Right);
-        }
+        movementController.SetDirection(MovementController.EDirection.Up);
+    }
+
+    public void MoveDown()
+    {
+        movementController.SetDirection(MovementController.EDirection.Down);
+    }
+
+    public void MoveLeft()
+    {
+        movementController.SetDirection(MovementController.EDirection.Left);
+    }
+
+    public void MoveRight()
+    {
+        movementController.SetDirection(MovementController.EDirection.Right);
     }
 }
