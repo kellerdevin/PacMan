@@ -1,10 +1,11 @@
-/**
- * a. Devin Keller
-b. Student ID: 2368610
-c. dkeller@chapman.edu
+/*
+ 1. IDENTIFYING INFORMATION
+a. Devin Keller, Kentaro Matsui, Tad Kitagushi, Miles Rovenger
+b. Student ID: 2368610, 2366951, 2403661, 2343785
+c. dkeller@chapman.edu, matsuo@chapman.edu, tkitaguchi@chapman.edu, rovenger@chapman.edu
 d. CPSC-245
-e. Assignment 1
- */
+e. Final Project: PacMan
+*/
 
 /*
  * This class will have a triggerable command using an “Execute” method. 
