@@ -35,6 +35,10 @@ public class StatsDisplay : MonoBehaviour
     {
         score += 1;
         text.text = "Score: " + score + "\nLevel: " + level + "\nLives: " + lives;
+        if (score >= 64)
+        {
+            GameController.instance.StateUpdate(GameController.GameStates.GameWon);
+        }
     }
     private void UpdateLives()
     {
